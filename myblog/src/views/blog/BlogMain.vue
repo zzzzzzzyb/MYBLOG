@@ -1,7 +1,7 @@
 <template>
     <el-container style="height: 100%;">
         <el-header style="padding: 0;font-size: 30px;background: linear-gradient(to right, #72ade3, #fff);height: 80px;">
-            <div>EDIT BLOG</div>
+            <div> EDIT BLOG </div>
             <div>{{ title }}</div>
         </el-header>
         <el-main style="padding: 0;height: 100%;">
