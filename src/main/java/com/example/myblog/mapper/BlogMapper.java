@@ -12,6 +12,7 @@ public interface BlogMapper {
 
     @Select("select * from blogs where id=#{id}")
     Blog ShowBlog(Integer id);
+    
     @Delete("delete from blogs where id=#{id}")
     void DeleteBlog(Integer id);
     @Insert("insert blogs(title,username) values(#{title},#{username})")

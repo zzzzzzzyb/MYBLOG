@@ -21,6 +21,7 @@ public class BlogServiceImpl implements BlogService {
     public Blog ShowBlog(Integer id) {
         return blogMapper.ShowBlog(id);
     }
+    
 
     @Override
     public void DeleteBlog(Integer id) {
