@@ -52,6 +52,7 @@ public class BlogServiceImpl implements BlogService {
         return blogMapper.LoginBlog(username,password).equals(password)?1:0;
     }
 
+
     @Override
     public Integer CreateUser(String username, String password) {
         return blogMapper.CreateUser(username,password);
