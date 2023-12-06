@@ -7,10 +7,9 @@ import java.util.List;
 
 @Mapper
 public interface BlogMapper {
-
-
     @Select("select * from blogs where username=#{username}")
     List<Blog> allBlog(String username);
+
     @Select("select * from blogs where id=#{id}")
     Blog ShowBlog(Integer id);
     @Delete("delete from blogs where id=#{id}")

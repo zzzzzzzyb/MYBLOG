@@ -37,7 +37,6 @@ public class BlogServiceImpl implements BlogService {
         return blogMapper.CreateId(title);
     }
 
-
     @Override
     public String DeleteId(Integer id) {
         return blogMapper.DeleteId(id);
@@ -52,7 +51,6 @@ public class BlogServiceImpl implements BlogService {
     public Integer LoginBlog(String username, String password) {
         return blogMapper.LoginBlog(username,password).equals(password)?1:0;
     }
-
 
     @Override
     public Integer CreateUser(String username, String password) {
