@@ -37,6 +37,7 @@ public class BlogServiceImpl implements BlogService {
         return blogMapper.CreateId(title);
     }
 
+
     @Override
     public String DeleteId(Integer id) {
         return blogMapper.DeleteId(id);
