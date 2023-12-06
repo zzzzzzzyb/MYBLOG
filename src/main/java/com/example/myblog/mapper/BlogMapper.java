@@ -21,8 +21,8 @@ public interface BlogMapper {
     String DeleteId(Integer id);
     @Update("update blogs set text=#{text},update_time=now() where id=#{id}")
     void SaveBlog(Integer id, String text);
-    @Select("select password=#{password} from user where username=#{username}")
-    Integer LoginBlog(String username, String password);
+    @Select("select password from user where username=#{username}")
+    String LoginBlog(String username, String password);
     @Insert("insert into user values(#{username},#{password})")
     Integer CreateUser(String username, String password);
     @Select("SELECT * from blogs order by update_time desc ")

@@ -49,7 +49,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public Integer LoginBlog(String username, String password) {
-        return blogMapper.LoginBlog(username,password);
+        return blogMapper.LoginBlog(username,password).equals(password)?1:0;
     }
 
     @Override
